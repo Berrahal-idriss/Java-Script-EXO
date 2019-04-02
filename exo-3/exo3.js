@@ -1,7 +1,7 @@
 // you can write js here
 console.log('exo-3');
 
-var userInput =['rock','paper','scissors'];
+var userInput =['rock','paper','scissors','bomb'];
 var uChoice;
 var computerChoice;
 
@@ -20,6 +20,9 @@ function getUserChoice(userInput)
             case 'scissors':
                 console.log('user: '+userInput);
                 break;
+        case 'bomb':
+            console.log('user: '+userInput);
+            break;
             default:
                 console.log('ERREUR!\nLes choix proposés sont\'rock\', \'paper\', ou \'scissors\'. ');
     }
@@ -28,7 +31,7 @@ function getUserChoice(userInput)
 }
 function getComputerChoice()
 {
-    computerChoice = Math.round(Math.random(0,2));
+    computerChoice = Math.round(Math.random(0,3));
     console.log(computerChoice);
     if(computerChoice==0)
     {
@@ -48,6 +51,10 @@ function getComputerChoice()
 
 function determineWinner(userChoice,computerChoice)
 {
+    if(userChoice==='bomb')
+    {
+        console.log('WON§§§');
+    }
     if(userChoice===computerChoice)
     {
         console.log('Tied');
