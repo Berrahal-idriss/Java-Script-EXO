@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <h1>Exercice 0</h1>
+
+    <script type="text/javascript">//Appel du fichier JavaScript
+        /* Section 1 */
+
+        var name = "Joe";//Initialisation et implémentation de la variable  name
+        var city = 'London';
+        var age = 32;
+        var isRed = true;
+        var isOld = age > 80;
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];// Initialisation d'un tableau à 3 entrées
+
+        function info(height, weight) {//Initialisation de la fonction info ayant pour parametre height et weight
+            if (height > 180) {//si height est plus grand que 180
+                console.log('Vous êtes grand'); //Affichage du message 'Vous êtes grand'
+            }
+            if (weight < 0) {//si weight est inferieur à 0
+                console.log('oups, there is a problem');//Affichage du message 'oups, there is a problem'
+            } else if (weight < 15) {//sinon si weight est inferieur à 15
+                console.log('Are you that slim ?')//Affichage du message 'Are you that slim'
+            } else {//sinon
+                console.log('Good !')//Affichage du message 'Good'
+            }
+        }
+
+        info(165, 45);//Appel de la fonction info ayant en parametre Weight valant 165 et height valant 45
+
+        var myHeight = 175; //Initilisation et implémentation de la variable myHeight ayant pour valeur 175
+        var myWeight = 86; //Initilisation et implémentation de la variable myWeight ayant pour valeur 86
+
+        info(myHeight, myWeight);//Appel de la fonction info ayant en parametre myWeight valant 175 et myHeight valant 86
+
+        info(myHeight + 15, myWeight - 100);//Incrémentation de myHeight de 15 et myWeight de -100
+
+        function toUpper(variable) { //Initialsitation de la fonction toUppercase
+            return variable.toUpperCase();//La fonction à pour effet de changer tout les caractères en MAJUSCULES
+        }
+
+        var upperName = toUpper(name);
+
+        for (i = 0; i < 3; i = i + 1) {
+            console.log(previousJobs[i]);//Affichage des trois premieres valeur présentes dans le tableau previousJobs grace a la boucle for
+        }
+
+        /* Section 2: */
+        //Afficher la ville dans laquelle Joe vit
+    console.log(city);
+      //Afficher si joe est roux ou pas
+    console.log(isRed);
+
+      
+
+        /* Section 3 */
+
+        console.log(myVariable);//un erreur se produit car la variable myVariable n'est pas initialisée
+
+    </script>
+
+</body>
+
+</html>
